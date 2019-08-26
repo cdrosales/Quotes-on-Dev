@@ -37,26 +37,32 @@ add_action( 'after_setup_theme', 'qod_setup' );
  */
 function qod_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'qod_content_width', 640 );
+	add_theme_support('post-thumbnails'); 
+        add_theme_support ('title-tag'); 
+        register_nav_menus( array(
+            'primary' => 'Primary Menu', 
+            'footer' => 'Footer Menu'
+        ));
 }
 add_action( 'after_setup_theme', 'qod_content_width', 0 );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
-function qod_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
-	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
-		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
-	}
+// function qod_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
+// 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
+// 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
+// 	}
 
-	return $stylesheet_uri;
-}
-add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
+// 	return $stylesheet_uri;
+// }
+// add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
  */
 function qod_scripts() {
-	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'qod-style', get_stylesheet_uri(), NULL, microtime(), NULL );
 
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );

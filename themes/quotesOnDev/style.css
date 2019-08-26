@@ -82,5 +82,25 @@ table {
   font-weight: 300;
   font-style: italic; }
 
+.homePage {
+  width: 1080px; }
+  .homePage .logo {
+    width: 500px; }
+
 body {
-  background-color: #222222; }
+  background-color: #222222;
+  color: #ffffff;
+  width: 1080px;
+  margin: 0 auto; }
+
+.nav .menu {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.nav a {
+  color: #00cc00; }
