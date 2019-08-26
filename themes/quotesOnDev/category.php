@@ -1,34 +1,33 @@
-<?php
-/**
- * The main template file.
- *
- * @package QOD_Starter_Theme
- */
+<?php get_header(); ?> 
 
-get_header(); ?>
+<section>
 
-<?php bloginfo(); ?> 
+<main>
+<div class="categoryPageTitle"> Category: <?php echo single_cat_title() ?> </div>
 
-<?php 
+            <?php if( have_posts() ): 
 
-$args = array(
-    'orderby' => 'rand',
-    'posts_per_page' => '1'
-);
-$the_firstQuote = new WP_Query( $args ); ?>
+            while ( have_posts() ): 
+                the_post();?> 
+            
+
+                <div class="journalTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+
+
+                <span class="postAuthor"><?php echo 'by ' . get_the_author(); ?></span>
+
+  
+                <?php the_content();?>
  
-<?php if ( $the_firstQuote->have_posts() ) : ?>
- 
-    <?php while ( $the_firstQuote->have_posts() ) : $the_firstQuote->the_post(); ?>
-    <div class="quotesContainer"><?php the_content(); ?></div>
-    <?php endwhile; ?>
- 
-<?php endif; ?>
+            <?php endwhile; ?>  
+            </div>
+</main>
+</section>    
 
-    <div class="author"> <?php the_title(); ?> </div>
-    <div class="source"></div>
 
-<button class="showMeBTN">Show me another!</button>
-
+        <?php else : ?>
+            <p>No posts found</p>
+    <?php endif; ?>
+    
 
 <?php get_footer(); ?>

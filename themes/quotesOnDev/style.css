@@ -56,42 +56,69 @@ table {
 
 @font-face {
   font-family: 'Exo Medium Italic';
-  src: url("/fonts/Exo-MediumItalic.eot");
-  src: url("/fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo-MediumItalic.woff2") format("woff2"), url("/fonts/Exo-MediumItalic.woff") format("woff"), url("/fonts/Exo-MediumItalic.ttf") format("truetype"), url("/fonts/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
+  src: url("./fonts/Exo-MediumItalic.eot");
+  src: url("./fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/Exo-MediumItalic.woff2") format("woff2"), url("./fonts/Exo-MediumItalic.woff") format("woff"), url("./fonts/Exo-MediumItalic.ttf") format("truetype"), url("./fonts/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: 'Exo Medium';
-  src: url("/fonts/Exo-Medium.eot");
-  src: url("/fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo-Medium.woff2") format("woff2"), url("/fonts/Exo-Medium.woff") format("woff"), url("/fonts/Exo-Medium.ttf") format("truetype"), url("/fonts/Exo-Medium.svg#Exo-Medium") format("svg");
+  src: url("./fonts/Exo-Medium.eot");
+  src: url("./fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/Exo-Medium.woff2") format("woff2"), url("./fonts/Exo-Medium.woff") format("woff"), url("./fonts/Exo-Medium.ttf") format("truetype"), url("./fonts/Exo-Medium.svg#Exo-Medium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Exo Light';
-  src: url("/fonts/Exo-Light.eot");
-  src: url("/fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo-Light.woff2") format("woff2"), url("/fonts/Exo-Light.woff") format("woff"), url("/fonts/Exo-Light.ttf") format("truetype"), url("/fonts/Exo-Light.svg#Exo-Light") format("svg");
+  src: url("./fonts/Exo-Light.eot");
+  src: url("./fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Exo-Light.woff2") format("woff2"), url("./fonts/Exo-Light.woff") format("woff"), url("./fonts/Exo-Light.ttf") format("truetype"), url("./fonts/Exo-Light.svg#Exo-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Exo Light Italic';
-  src: url("/fonts/Exo-LightItalic.eot");
-  src: url("/fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo-LightItalic.woff2") format("woff2"), url("/fonts/Exo-LightItalic.woff") format("woff"), url("/fonts/Exo-LightItalic.ttf") format("truetype"), url("/fonts/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
+  src: url("./fonts/Exo-LightItalic.eot");
+  src: url("./fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/Exo-LightItalic.woff2") format("woff2"), url("./fonts/Exo-LightItalic.woff") format("woff"), url("./fonts/Exo-LightItalic.ttf") format("truetype"), url("./fonts/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
 
 .homePage {
-  width: 1080px; }
-  .homePage .logo {
-    width: 500px; }
+  margin: 0 auto; }
+  .homePage .quotations i {
+    color: #00cc00;
+    font-size: 100px; }
+  .homePage .quotesContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .homePage .quotesContainer p {
+      text-align: left;
+      line-height: 1.5; }
+  .homePage .quoteData {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .homePage .quoteData .author {
+      font-family: 'Exo Light';
+      padding-right: 5px; }
+    .homePage .quoteData .source {
+      color: #00cc00;
+      font-family: 'Exo Light Italic'; }
 
 body {
   background-color: #222222;
   color: #ffffff;
   width: 1080px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: 'Exo Light'; }
 
 .nav .menu {
   width: 100px;

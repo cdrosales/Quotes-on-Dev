@@ -1,6 +1,33 @@
 .homePage{
-    width: 1080px;
-    .logo{
-        width: 500px;
+    margin: 0 auto;
+
+   .quotations{
+       i{
+           color: $brand-green;
+           font-size: 100px;
+       }
+   }
+
+    .quotesContainer{
+        display: flex;
+        flex-direction: column;
+        p{
+            text-align: left;
+            line-height: $brand-lineHeight;
+        }
     }
+    .quoteData{
+        display: flex;
+        flex-direction: row;
+        .author{
+            font-family: 'Exo Light'; 
+            padding-right: 5px;
+        }
+        .source{
+            color: $brand-green;
+            font-family: 'Exo Light Italic'; 
+        }
+    }
+    
 }
+
