@@ -1,7 +1,15 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The main template file.
+ *
+ * @package QOD_Starter_Theme
+ */
 
+get_header(); ?>
 
-<?php bloginfo(); ?> 
+<div class="logo">
+    <img src="<?php echo get_template_directory_uri() . '/assets/qod-logo.svg'; ?>"/>
+</div>
 
 <?php 
 

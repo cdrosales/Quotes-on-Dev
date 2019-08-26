@@ -1,16 +1,22 @@
 /*
-Theme Name: Inhabitant
+Theme Name: QuotesOnDev
 Author: Cara Denise Rosales
-Description: A theme I made.
+Description: A theme
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: inhabitant
+Text Domain: QuotesOnDev
 */
 
-@import 'base';
-@import 'layout';
-@import 'components';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/variables';
+
+@import 'layout/frontpage';
+@import 'layout/theme';
+
+@import 'components/buttons';
+
 
 
 

@@ -1,5 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The main template file.
+ *
+ * @package QOD_Starter_Theme
+ */
 
+get_header(); ?>
 
 <?php bloginfo(); ?> 
 

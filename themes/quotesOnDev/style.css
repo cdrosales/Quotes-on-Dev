@@ -1,11 +1,86 @@
 /*
-Theme Name: Inhabitant
+Theme Name: QuotesOnDev
 Author: Cara Denise Rosales
-Description: A theme I made.
+Description: A theme
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: inhabitant
+Text Domain: QuotesOnDev
 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  background-color: pink; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Exo Medium Italic';
+  src: url("/fonts/Exo-MediumItalic.eot");
+  src: url("/fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo-MediumItalic.woff2") format("woff2"), url("/fonts/Exo-MediumItalic.woff") format("woff"), url("/fonts/Exo-MediumItalic.ttf") format("truetype"), url("/fonts/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo Medium';
+  src: url("/fonts/Exo-Medium.eot");
+  src: url("/fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo-Medium.woff2") format("woff2"), url("/fonts/Exo-Medium.woff") format("woff"), url("/fonts/Exo-Medium.ttf") format("truetype"), url("/fonts/Exo-Medium.svg#Exo-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo Light';
+  src: url("/fonts/Exo-Light.eot");
+  src: url("/fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo-Light.woff2") format("woff2"), url("/fonts/Exo-Light.woff") format("woff"), url("/fonts/Exo-Light.ttf") format("truetype"), url("/fonts/Exo-Light.svg#Exo-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo Light Italic';
+  src: url("/fonts/Exo-LightItalic.eot");
+  src: url("/fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/Exo-LightItalic.woff2") format("woff2"), url("/fonts/Exo-LightItalic.woff") format("woff"), url("/fonts/Exo-LightItalic.ttf") format("truetype"), url("/fonts/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+body {
+  background-color: #222222; }
