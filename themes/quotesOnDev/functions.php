@@ -100,4 +100,6 @@ function red_scripts() { //this is in our server
    ) );
  }
  add_action( 'wp_enqueue_scripts', 'red_scripts' );
- 
+
+
+?>

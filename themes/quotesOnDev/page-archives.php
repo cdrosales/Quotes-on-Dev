@@ -39,7 +39,19 @@ get_header(); ?>
             <div class="source"></div>
             </div>
 
-    <button class="showMeBTN">Show me another!</button>
+    <button class="showMeBTN">Show me another!</button> <h2>Most Used Categories</h2>
+
+
+<ul class="errorCategories">
+<?php wp_list_categories( array(
+    'title_li'=> __( '' ),
+    'orderby'=> 'name',
+    'show_count' => true,
+)); ?> 
+</ul>
+
+
+
 
 
 

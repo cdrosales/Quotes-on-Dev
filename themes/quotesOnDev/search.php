@@ -1,34 +1,37 @@
-<?php
-/**
- * The main template file.
- *
- * @package QOD_Starter_Theme
- */
+<?php get_header('white'); ?> 
 
-get_header(); ?>
+<section>
 
-<?php bloginfo(); ?> 
+    <main>
+<div class="searchPageTitle"> Search results for: </div>
 
-<?php 
 
-$args = array(
-    'orderby' => 'rand',
-    'posts_per_page' => '10'
-);
-$the_firstQuote = new WP_Query( $args ); ?>
- 
-<?php if ( $the_firstQuote->have_posts() ) : ?>
- 
-    <?php while ( $the_firstQuote->have_posts() ) : $the_firstQuote->the_post(); ?>
-    <div class="quotesContainer"><?php the_content(); ?></div>
-    <?php endwhile; ?>
- 
-<?php endif; ?>
+    <div class="searchContent">
+        <?php if( have_posts() ): 
+        while ( have_posts() ): 
+            the_post();?> 
 
-    <div class="author"> <?php the_title(); ?> </div>
-    <div class="source"></div>
+        <h2><?php the_title(); ?></h2> 
+        
+        <div class="resultsInfo">
+        <?php echo wp_trim_words( get_the_content(), 40, ' [...]' );?>
+        </div>
+        
+    
 
-<!-- <button class="showMeBTN">Show me another!</button> -->
+        <?php endwhile; ?> 
 
+        <?php else : ?>
+            <p>No posts found</p>
+        <?php endif; ?>
+    </div>    
+        
+    
+    </main>
+    <div class="sidebarContent">
+
+      
+    </div>
+</section>
 
 <?php get_footer(); ?>
