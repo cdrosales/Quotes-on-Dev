@@ -9,7 +9,8 @@
 </head>
 <body <?php body_class();?>> 
 
+<a href="<?php echo get_home_url(); ?>">
 <img src="<?php echo get_template_directory_uri() . '/assets/qod-logo.svg'; ?>" class="logo"/>
-
+</a>
 
 <title><?php bloginfo('title');?></title>

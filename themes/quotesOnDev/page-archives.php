@@ -53,7 +53,7 @@ Categories
 </ul>
 
 
-
+Tags
 <?php 
 echo '<div class="tags">';
 
