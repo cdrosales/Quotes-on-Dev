@@ -1,0 +1,27 @@
+.fa-smile{
+    font-size: 16px;
+    color: rgb(230, 213, 29);
+    padding-left: 2px;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Exo Medium';
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    p{
+        font-size: 16px;
+        line-height: $brand-lineHeight;
+        padding-bottom: 30px;
+        .green{
+            color:$brand-green;
+
+        }
+    }
+
+}

@@ -14,3 +14,16 @@ header{
         height: 100px;
     }
 }
+
+section {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+i{
+    font-size: 100px;
+    color: $brand-green;
+}

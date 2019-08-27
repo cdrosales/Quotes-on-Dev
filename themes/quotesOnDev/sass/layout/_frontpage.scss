@@ -1,31 +1,18 @@
-.homePage{
-    margin: 0 auto;
-    width: 1000px;
+.quotes{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    width: 650px;
 
-    i{
-        font-size: 100px;
-        color: $brand-green;
-    }
-
-   .quotes{
-       display: flex;
-       flex-direction: column;
-       width: 650px;
-
-        .quotesContainer{
-            display: flex;
-            flex-direction: column;
-            p{
-                text-align: left;
-                font-size: 36px;
-                line-height: $brand-lineHeight;
-            }
+    .quotesContainer{
+    display: flex;
+    flex-direction: column;
+        p{
+        text-align: left;
+        font-size: 36px;
+        line-height: $brand-lineHeight;
         }
-    }  
-}
+    }
+}  
 
 .quoteData{
     display: flex;

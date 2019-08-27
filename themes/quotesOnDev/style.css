@@ -82,42 +82,27 @@ table {
   font-weight: 300;
   font-style: italic; }
 
-.homePage {
-  margin: 0 auto;
-  width: 1000px;
+.quotes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .homePage i {
-    font-size: 100px;
-    color: #00cc00; }
-  .homePage .quotes {
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 650px; }
+  .quotes .quotesContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    width: 650px; }
-    .homePage .quotes .quotesContainer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .homePage .quotes .quotesContainer p {
-        text-align: left;
-        font-size: 36px;
-        line-height: 1.5; }
+            flex-direction: column; }
+    .quotes .quotesContainer p {
+      text-align: left;
+      font-size: 36px;
+      line-height: 1.5; }
 
 .quoteData {
   display: -webkit-box;
@@ -175,6 +160,49 @@ header {
   margin: 40px auto; }
   header .logo {
     height: 100px; }
+
+section {
+  margin: 0 auto;
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+i {
+  font-size: 100px;
+  color: #00cc00; }
+
+.fa-smile {
+  font-size: 16px;
+  color: #e6d51d;
+  padding-left: 2px; }
+
+.title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: 'Exo Medium'; }
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 650px; }
+  .about p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 30px; }
+    .about p .green {
+      color: #00cc00; }
 
 .nav .menu {
   width: 100px;
