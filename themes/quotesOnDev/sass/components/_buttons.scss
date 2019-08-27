@@ -1,0 +1,26 @@
+.buttonHome{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    .showMeBTN{
+        background-color: transparent;
+        border: 1px solid $brand-green;
+        color: $brand-green;
+        padding: 10px 15px;
+        font-size: 16px;
+        font-family: 'Exo Medium';
+        text-transform: capitalize; 
+    }
+}
+
+.searchBTN{
+    .search-field{
+        background-color: transparent;
+        border: 1px solid $brand-green;
+        color: $brand-green;
+        padding: 5px 30px 5px 10px;
+        font-size: 16px;
+        font-family: 'Exo Medium';
+        text-transform: capitalize; 
+    }
+}

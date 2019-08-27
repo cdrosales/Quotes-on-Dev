@@ -126,23 +126,6 @@ table {
     font-size: 20px;
     padding-left: 5px; }
 
-.buttonHome {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 35px; }
-  .buttonHome .showMeBTN {
-    background-color: transparent;
-    border: 1px solid #00cc00;
-    color: #00cc00;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-family: 'Exo Medium';
-    text-transform: capitalize; }
-
 body {
   background-color: #222222;
   color: #ffffff;
@@ -220,6 +203,38 @@ i {
   .archives a {
     text-decoration: none;
     color: #00cc00; }
+
+.submit {
+  background-color: transparent;
+  border: none; }
+  .submit .fa-search {
+    font-size: 15px; }
+
+.buttonHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 35px; }
+  .buttonHome .showMeBTN {
+    background-color: transparent;
+    border: 1px solid #00cc00;
+    color: #00cc00;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Exo Medium';
+    text-transform: capitalize; }
+
+.searchBTN .search-field {
+  background-color: transparent;
+  border: 1px solid #00cc00;
+  color: #00cc00;
+  padding: 5px 30px 5px 10px;
+  font-size: 16px;
+  font-family: 'Exo Medium';
+  text-transform: capitalize; }
 
 .nav .menu {
   width: 100px;
