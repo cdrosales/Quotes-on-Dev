@@ -7,9 +7,6 @@
 
 get_header(); ?>
 
-    <section class="homePage">
-
-
 
         <div class="quotations">
             <i class="fas fa-quote-left"></i>
@@ -17,31 +14,36 @@ get_header(); ?>
         </div>
         
 
-
-        <div class="quotesContainer">
-            <?php 
-            $args = array(
-                'orderby' => 'rand',
-                'posts_per_page' => '1'
-            );
-            $the_firstQuote = new WP_Query( $args ); ?>
-            
-            <?php if ( $the_firstQuote->have_posts() ) : ?>
-                <?php while ( $the_firstQuote->have_posts() ) : $the_firstQuote->the_post(); ?>
-                <?php the_content(); ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
-
-        </div>
-
         <div class="quoteData">
             <div class="author"> - <?php the_title(); ?>,</div>
             <div class="source"></div>
             </div>
 
-    <button class="showMeBTN">Show me another!</button> <h2>Most Used Categories</h2>
 
 
+Quote Authors
+<?php
+$posts = new WP_Query( array( 
+    'post_type' => 'post', 
+    'post_status' => 'publish', 
+    'posts_per_page' => -1
+));
+
+if ( $posts->have_posts() ) :
+?>
+
+  <ul>
+    <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
+      <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+    <?php endwhile; ?>
+  </ul>
+
+<?php endif; ?>
+
+
+
+
+Categories
 <ul class="errorCategories">
 <?php wp_list_categories( array(
     'title_li'=> __( '' ),
@@ -53,6 +55,34 @@ get_header(); ?>
 
 
 
+
+
+
+
+<?php 
+$tags = get_tags();
+
+// echo '<pre>';
+// print_r($tags);
+// echo '</pre>';
+
+
+$i = 0; 
+while($i <count($tags)) :
+
+echo '<pre>';
+print_r($tags[$i]->slug);
+echo '</pre>';
+$i++;
+
+// $tag_link = get_tag_link();
+// echo $tag_link;
+// echo '<a href="' . $tag_link . '">'; 
+
+
+endwhile;
+
+?>
 
 
 
