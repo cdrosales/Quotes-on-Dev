@@ -54,35 +54,20 @@ Categories
 
 
 
-
-
-
-
-
 <?php 
+echo '<div class="tags">';
+
+
 $tags = get_tags();
+foreach ( $tags as $tag ) {
+	$tag_link = get_tag_link( $tag->term_id );
+        
+	echo '<a href=' . $tag_link . '>';
+	echo $tag->slug . '</a>';
+}
+echo '</div>';
+ ?>
 
-// echo '<pre>';
-// print_r($tags);
-// echo '</pre>';
-
-
-$i = 0; 
-while($i <count($tags)) :
-
-echo '<pre>';
-print_r($tags[$i]->slug);
-echo '</pre>';
-$i++;
-
-// $tag_link = get_tag_link();
-// echo $tag_link;
-// echo '<a href="' . $tag_link . '">'; 
-
-
-endwhile;
-
-?>
 
 
 
