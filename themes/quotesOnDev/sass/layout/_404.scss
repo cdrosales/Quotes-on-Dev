@@ -1,11 +1,23 @@
-// #search-submit{
-//     display: none;
-// }
-
 .submit{
     background-color: transparent;
     border: none;
     .fa-search{
         font-size: 15px;
+    }
+}
+.searchContent{
+    border-top: $brand-border;
+    h2{
+        margin: 20px 0;
+        a{
+            color: $brand-green;
+            font-size: 20px;
+            font-family: 'Exo Medium';
+            text-decoration: none;
+        }
+        
+    }
+    .resultsInfo{
+        line-height: $brand-lineHeight;
     }
 }

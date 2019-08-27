@@ -145,7 +145,7 @@ header {
     height: 100px; }
 
 section {
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,6 +209,32 @@ i {
   border: none; }
   .submit .fa-search {
     font-size: 15px; }
+
+.searchContent {
+  border-top: 1px dashed #ffffff; }
+  .searchContent h2 {
+    margin: 20px 0; }
+    .searchContent h2 a {
+      color: #00cc00;
+      font-size: 20px;
+      font-family: 'Exo Medium';
+      text-decoration: none; }
+  .searchContent .resultsInfo {
+    line-height: 1.5; }
+
+.catInfo {
+  margin: 15px 0;
+  border-bottom: 1px dashed #ffffff; }
+  .catInfo p {
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-align: left; }
+  .catInfo h3 {
+    margin: 10px 0 30px 0; }
+    .catInfo h3 a {
+      text-decoration: none;
+      color: #00cc00;
+      font-size: 18px; }
 
 .buttonHome {
   display: -webkit-box;
