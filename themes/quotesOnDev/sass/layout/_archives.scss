@@ -1,0 +1,15 @@
+.archives{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    .subTitles{
+        font-family: 'Exo Medium';
+        padding: 15px 0;
+        font-size: 18px;
+    }
+    a{
+        text-decoration: none;
+        color: $brand-green;
+    }
+}
+
