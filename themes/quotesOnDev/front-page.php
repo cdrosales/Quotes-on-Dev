@@ -7,16 +7,12 @@
 
 get_header(); ?>
 
-    <section class="homePage">
 
+<section class="homePage">
 
+<i class="fas fa-quote-left"></i>
 
-        <div class="quotations">
-            <i class="fas fa-quote-left"></i>
-            <i class="fas fa-quote-right"></i>
-        </div>
-        
-
+    <div class="quotes">
 
         <div class="quotesContainer">
             <?php 
@@ -31,15 +27,21 @@ get_header(); ?>
                 <?php the_content(); ?>
                 <?php endwhile; ?>
             <?php endif; ?>
-
         </div>
 
-        <div class="quoteData">
-            <div class="author"> - <?php the_title(); ?>,</div>
-            <div class="source"></div>
-            </div>
+    </div>
 
-    <button class="showMeBTN">Show me another!</button>
+<i class="fas fa-quote-right"></i>
+
+
+</section>
+
+        <div class="quoteData">
+            <span>-</span><div class="author"><?php the_title();?></div>
+            <span>,</span><div class="source"></div>
+        </div>
+
+<div class="buttonHome"><button class="showMeBTN">Show me another!</button></div>
 
 
 

@@ -5,3 +5,12 @@ body{
     margin: 0 auto;
     font-family: 'Exo Light';
 }
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    .logo{
+        height: 100px;
+    }
+}
