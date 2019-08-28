@@ -24,11 +24,12 @@
 
 
 
-
-
             <?php endwhile; ?> 
 
-            <?php the_posts_navigation(); ?> 
+      <p><?php posts_nav_link(); ?></p>
+
+  
+
 
             <?php else : ?>
                 <p>No posts found</p>

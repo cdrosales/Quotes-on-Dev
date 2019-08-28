@@ -102,7 +102,17 @@ function red_scripts() { //this is in our server
  add_action( 'wp_enqueue_scripts', 'red_scripts' );
 
 
+ function posts_per_page($query) {
+    if (is_category()) {
+        $query->set('posts_per_page', 5);
+    }
+    if (is_tag()) {
+        $query->set('posts_per_page', 5);
+    }
 
+} 
+ 
+add_action('pre_get_posts', 'posts_per_page');
 
  
 ?>

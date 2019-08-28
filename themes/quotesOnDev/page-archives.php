@@ -59,9 +59,11 @@ get_header(); ?>
               $tags = get_tags();
               foreach ( $tags as $tag ) {
                 $tag_link = get_tag_link( $tag->term_id );
-                      
+                echo '<p>';
                 echo '<a href=' . $tag_link . '>';
                 echo $tag->slug . '</a>';
+                echo '</p>';
+
               }
               echo '</div>';
               ?>
