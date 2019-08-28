@@ -36,9 +36,13 @@ get_header(); ?>
 
 </section>
 
+<?php $custom = get_post_custom();
+$quoteSource = $custom[_qod_quote_source][0];
+?> 
+
         <div class="quoteData">
             <span>-</span><div class="author"><?php the_title();?></div>
-            <span>,</span><div class="source"></div>
+            <span>,</span><div class="source"><?php echo $quoteSource ?></div>
         </div>
 
 <div class="buttonHome"><button class="showMeBTN">Show me another!</button></div>
