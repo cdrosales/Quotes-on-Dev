@@ -1,15 +1,26 @@
 .archives{
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 550px;
+    
     .subTitles{
         font-family: 'Exo Medium';
-        padding: 15px 0;
+        padding: 20px 0;
         font-size: 18px;
+    }
+    .archivesAuthors, .archivesTags, .archivesCategories{
+    width: 500px;
+        
     }
     a{
         text-decoration: none;
+        text-align: left;
         color: $brand-green;
+        float: left;
+        line-height: 2;
+        padding-right: 13px;
+        
     }
+    
 }
 

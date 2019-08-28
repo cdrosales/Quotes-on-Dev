@@ -90,7 +90,7 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 650px; }
+  width: 550px; }
   .quotes .quotesContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -142,11 +142,11 @@ header {
           justify-content: center;
   margin: 40px auto; }
   header .logo {
-    height: 100px; }
+    height: 90px; }
 
 section {
   margin: 0 auto 50px auto;
-  width: 1000px;
+  width: 950px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 650px; }
+  width: 550px; }
   .about p {
     font-size: 16px;
     line-height: 1.5;
@@ -195,14 +195,20 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 650px; }
+  width: 550px; }
   .archives .subTitles {
     font-family: 'Exo Medium';
-    padding: 15px 0;
+    padding: 20px 0;
     font-size: 18px; }
+  .archives .archivesAuthors, .archives .archivesTags, .archives .archivesCategories {
+    width: 500px; }
   .archives a {
     text-decoration: none;
-    color: #00cc00; }
+    text-align: left;
+    color: #00cc00;
+    float: left;
+    line-height: 2;
+    padding-right: 13px; }
 
 .submit {
   background-color: transparent;
