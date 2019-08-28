@@ -8,7 +8,7 @@
     flex-direction: column;
         p{
         text-align: left;
-        font-size: 36px;
+        font-size: 30px;
         line-height: $brand-lineHeight;
         }
     }
@@ -17,19 +17,17 @@
 .quoteData{
     display: flex;
     flex-direction: row;
-    margin-left: 215px;
-    padding-top: 1.5rem;
-    font-size: 20px;
+    margin-left: 265px;
     font-family: 'Exo Light'; 
         .author{
             font-family: 'Exo Light'; 
             padding-right: 5px;
-            font-size: 20px;
+            font-size: 18px;
         }
         .source{
             color: $brand-green;
             font-family: 'Exo Light Italic'; 
-            font-size: 20px;
+            font-size: 18px;         
             padding-left: 5px;
         }
     }  

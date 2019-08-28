@@ -101,7 +101,7 @@ table {
             flex-direction: column; }
     .quotes .quotesContainer p {
       text-align: left;
-      font-size: 36px;
+      font-size: 30px;
       line-height: 1.5; }
 
 .quoteData {
@@ -112,18 +112,16 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 215px;
-  padding-top: 1.5rem;
-  font-size: 20px;
+  margin-left: 265px;
   font-family: 'Exo Light'; }
   .quoteData .author {
     font-family: 'Exo Light';
     padding-right: 5px;
-    font-size: 20px; }
+    font-size: 18px; }
   .quoteData .source {
     color: #00cc00;
     font-family: 'Exo Light Italic';
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 5px; }
 
 body {
@@ -268,14 +266,31 @@ i {
   font-family: 'Exo Medium';
   text-transform: capitalize; }
 
-.nav .menu {
-  width: 100px;
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.nav a {
-  color: #00cc00; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 75px 25px 0 0; }
+  .nav .menu {
+    width: 275px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 10px; }
+  .nav a {
+    color: #00cc00;
+    text-decoration: none;
+    padding: 0 10px;
+    border-right: 1px solid white; }
+  .nav .red {
+    color: #00cc00; }

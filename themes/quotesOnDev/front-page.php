@@ -37,7 +37,7 @@ get_header(); ?>
 </section>
 
 <?php $custom = get_post_custom();
-$quoteSource = $custom[_qod_quote_source][0];
+$quoteSource = $custom['_qod_quote_source'][0];
 ?> 
 
         <div class="quoteData">
