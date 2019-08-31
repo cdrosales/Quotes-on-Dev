@@ -277,7 +277,7 @@ i {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 75px 25px 0 0; }
+  margin: 50px 25px 50px 0; }
   .nav .menu {
     width: 275px;
     display: -webkit-box;

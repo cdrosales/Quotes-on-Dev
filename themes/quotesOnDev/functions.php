@@ -93,7 +93,7 @@ require get_template_directory() . '/inc/api.php';
 function red_scripts() { //this is in our server
 	$script_url = get_template_directory_uri() . '/js/scripts.js';
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), false, true );
+	wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), microtime(), true );
    wp_localize_script( 'red_comments', 'red_vars', array( //localized red_vars in our browser
 	   'rest_url' => esc_url_raw( rest_url() ),
 	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
@@ -114,5 +114,8 @@ function red_scripts() { //this is in our server
  
 add_action('pre_get_posts', 'posts_per_page');
 
- 
+
+
+
+
 ?>

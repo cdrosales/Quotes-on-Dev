@@ -1,4 +1,4 @@
-<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+<form role="search" method="get" class="search-form" action="<?php echo esc_url(site_url( '/' )); ?>">
 	<fieldset>
 		<a href="#" class="search-toggle" aria-hidden="true">
 			
