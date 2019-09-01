@@ -46,6 +46,7 @@
             xhr.setRequestHeader( 'X-WP-Nonce', red_vars.wpapi_nonce );
          }
       }).done( function(response) {
+         $('.quoteForm')[0].reset();
          alert('Success! Your post has been submitted!');
       })
       .fail(function() { 
