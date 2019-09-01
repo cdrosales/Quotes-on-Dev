@@ -1,5 +1,3 @@
-
-
 (function( $ ) {
 
     $('.showMeBTN').on('click', function(event) {
@@ -7,12 +5,10 @@
        $.ajax({
           method: 'get',
           url: red_vars.rest_url + 'wp/v2/posts?filter[orderby]=rand&per_page=1', //randomized (end point)
-        //take out data because 'get'
           beforeSend: function(xhr) {
              xhr.setRequestHeader( 'X-WP-Nonce', red_vars.wpapi_nonce );
           }
        }).done( function(response) {
-        //   console.log('Success!');
           console.log(response);
         $('.quotesContainer').empty().append(response[0].content.rendered);
         $('.author').empty().append(response[0].title.rendered);
@@ -25,17 +21,14 @@
       event.preventDefault();
 
       let $form = $('.quoteForm').serializeArray();
-      // console.log($form);
 
       $newjson = {};
 
       $.each( $form, function() {
          $newjson [this.name] = this.value || '';
-         // console.log($newjson)
        });
 
       $newquote = JSON.stringify($newjson);
-      console.log($newquote)
 
       $.ajax({
          type: "POST",
@@ -50,47 +43,11 @@
          alert('Success! Your post has been submitted!');
       })
       .fail(function() { 
-         // alert("Error! Unable to submit post."); 
         $('.submitForm').hide();
          $('.errorSubmit').show();
 
      });
-      
-   
-      
-
-
    });
-
-
-   // $.ajax({
-   //    method: 'post',
-   //    url: red_vars.rest_url + 'wp/v2/posts',
-   //    data: {
-   //       'action': 'red_post_ajax',
-   //       'security': red_vars.comment_nonce,
-   //       'the_post_id': red_vars.post_id
-   //    },
-   //    beforeSend: function(xhr) {
-   //       xhr.setRequestHeader( 'X-WP-Nonce', red_vars.wpapi_nonce );
-   //    }     
-   // }).done( function(response) {
-   //    alert('Success! Post is posted!');
-
-   // });
-
-
-   // let $form = $('.quoteForm').serializeArray();
-   // console.log($form);
-
-   
-   // click button
-   // turn form into json object
-   // get input value
-   // post the input value 
-
-
-
 })( jQuery );
 
 

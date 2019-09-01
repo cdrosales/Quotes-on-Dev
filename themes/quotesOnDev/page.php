@@ -1,20 +1,5 @@
-<?php
-/**
- * The main template file.
- *
- * @package QOD_Starter_Theme
- */
 
-get_header(); ?>
-
-<?php
-/**
- * The main template file.
- *
- * @package QOD_Starter_Theme
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 
 <section class="homePage">
@@ -61,11 +46,5 @@ get_header(); ?>
 
 </section>
 
-        
-
-
-
 <?php get_footer(); ?>
 
-
-<?php get_footer(); ?>

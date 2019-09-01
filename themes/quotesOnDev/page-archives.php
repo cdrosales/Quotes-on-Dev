@@ -1,11 +1,4 @@
-<?php
-/**
- * The main template file.
- *
- * @package QOD_Starter_Theme
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <section class="archivesPage">
 
@@ -35,7 +28,7 @@ get_header(); ?>
                 </ul>
 
               <?php endif; ?>
-          </div>
+              </div>
 
 
 
@@ -50,7 +43,7 @@ get_header(); ?>
               </ul>
 
 
-              <div class="subTitles">Tags</div> 
+            <div class="subTitles">Tags</div> 
 
               <?php 
               echo '<div class="archivesTags">';
@@ -67,7 +60,7 @@ get_header(); ?>
               }
               echo '</div>';
               ?>
-    </div>
+      </div>
 
 
 <i class="fas fa-quote-right"></i>
@@ -76,9 +69,4 @@ get_header(); ?>
 </section>
 
         
-
-
-
-
-
 <?php get_footer(); ?>

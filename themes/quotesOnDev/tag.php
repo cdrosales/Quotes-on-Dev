@@ -5,10 +5,7 @@
 
     <div class="about">
 
-
-
         <div class="title"> Tags: <?php echo single_tag_title() ?>  </div>
-
 
         <div class="searchContent">
             <?php if( have_posts() ): 
@@ -22,10 +19,6 @@
 
             </div>
 
-
-
-
-
             <?php endwhile; ?> 
 
             <p><?php posts_nav_link(); ?></p>
@@ -35,16 +28,13 @@
                 <p>No posts found</p>
             <?php endif; ?>
         </div>    
-            
-                
+               
 		
     </div>
 
 	<i class="fas fa-quote-right"></i>
 
-
 </section> 
-
-    
+  
 
 <?php get_footer(); ?>

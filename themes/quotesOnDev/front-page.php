@@ -1,12 +1,4 @@
-<?php
-/**
- * The main template file.
- *
- * @package QOD_Starter_Theme
- */
-
-get_header(); ?>
-
+<?php get_header(); ?>
 
 <section class="homePage">
 
@@ -46,9 +38,6 @@ $quoteSource = $custom['_qod_quote_source'][0];
         </div>
 
 <div class="buttonHome"><button class="showMeBTN">Show me another!</button></div>
-
-
-
 
 
 <?php get_footer(); ?>

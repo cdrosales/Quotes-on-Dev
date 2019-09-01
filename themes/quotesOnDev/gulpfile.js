@@ -9,7 +9,6 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
 
-// Create basic Gulp tasks
 
 gulp.task('sass', function() {
   return gulp
@@ -53,7 +52,6 @@ gulp.task(
   })
 );
 
-// Set-up BrowserSync and watch
 
 gulp.task('browser-sync', function() {
   const files = [

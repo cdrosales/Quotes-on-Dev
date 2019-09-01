@@ -5,8 +5,6 @@
 
     <div class="about">
 
-
-
         <div class="title"> Author: <?php echo the_title() ?>  </div>
 
 
@@ -22,10 +20,6 @@
 
             </div>
 
-
-
-
-
             <?php endwhile; ?> 
 
             <?php the_posts_navigation(); ?> 
@@ -34,16 +28,11 @@
                 <p>No posts found</p>
             <?php endif; ?>
         </div>    
-            
-                
-		
+                        		
     </div>
 
 	<i class="fas fa-quote-right"></i>
 
-
 </section> 
-
-    
 
 <?php get_footer(); ?>

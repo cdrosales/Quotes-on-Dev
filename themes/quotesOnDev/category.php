@@ -5,10 +5,7 @@
 
     <div class="about">
 
-
-
         <div class="title"> Categories: <?php echo single_cat_title() ?>  </div>
-
 
         <div class="searchContent">
             <?php if( have_posts() ): 
@@ -22,29 +19,20 @@
 
             </div>
 
-
-
             <?php endwhile; ?> 
 
-      <p><?php posts_nav_link(); ?></p>
-
-  
-
+            <p><?php posts_nav_link(); ?></p>
 
             <?php else : ?>
                 <p>No posts found</p>
             <?php endif; ?>
         </div>    
             
-                
-		
     </div>
 
 	<i class="fas fa-quote-right"></i>
 
-
 </section> 
 
-    
 
 <?php get_footer(); ?>
