@@ -240,6 +240,32 @@ i {
       color: white;
       font-size: 18px; }
 
+input, textarea {
+  border: 1px solid #00cc00;
+  background-color: transparent; }
+
+.quoteForm h1 {
+  padding: 15px 0; }
+
+.quoteForm .authorSubmit, .quoteForm .findQuoteSource, .quoteForm .quoteSourceSubmit {
+  width: 350px;
+  height: 30px;
+  margin: 15px 0;
+  border-radius: 2px;
+  color: white;
+  font-size: 16px;
+  padding-left: 5px;
+  font-family: 'Exo Medium'; }
+
+.quoteForm .quoteSubmit {
+  width: 550px;
+  height: 100px;
+  border-radius: 2px;
+  color: white;
+  font-size: 16px;
+  padding-left: 5px;
+  font-family: 'Exo Medium'; }
+
 .buttonHome {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,7 +281,8 @@ i {
     padding: 10px 15px;
     font-size: 16px;
     font-family: 'Exo Medium';
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    border-radius: 2px; }
 
 .searchBTN .search-field {
   background-color: transparent;
@@ -264,7 +291,19 @@ i {
   padding: 5px 30px 5px 10px;
   font-size: 16px;
   font-family: 'Exo Medium';
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  border-radius: 2px; }
+
+.submitQuote {
+  background-color: transparent;
+  border: 1px solid #00cc00;
+  color: #00cc00;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: 'Exo Medium';
+  text-transform: capitalize;
+  width: 150px;
+  border-radius: 2px; }
 
 .nav {
   display: -webkit-box;

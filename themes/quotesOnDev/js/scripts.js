@@ -47,7 +47,10 @@
          }
       }).done( function(response) {
          alert('Success! Your post has been submitted!');
-      });
+      })
+      .fail(function() { 
+         alert("Error! Unable to submit post."); 
+     });
       
    
         

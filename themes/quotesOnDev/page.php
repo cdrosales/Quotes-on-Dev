@@ -27,16 +27,16 @@ get_header(); ?>
 
         <form method="post" class="quoteForm">
        
-        <h1>Author:</h1>
+        <h1>Author of Quote</h1>
         <input type="text" name="title" class="authorSubmit">
 
-        <h1>Quote:</h1>
+        <h1>Quote</h1>
         <textarea class="quoteSubmit" name="excerpt"></textarea>
 
-        <h1>Where did you find this quote?</h1>
+        <h1>Where did you find this quote?(e.g. book name)</h1>
         <input type="text" name="_qod_quote_source" class="findQuoteSource">
         
-        <h1>Provide the URL of the quote source, if available?</h1>
+        <h1>Provide the URL of the quote source, if available.</h1>
         <input type="url" name="_qod_quote_source_url" class="quoteSourceSubmit">
 
 

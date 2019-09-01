@@ -1,0 +1,29 @@
+input, textarea{
+    border: 1px solid $brand-green;
+    background-color: transparent;
+}
+
+.quoteForm{
+    h1{
+        padding: 15px 0;
+    }
+    .authorSubmit, .findQuoteSource, .quoteSourceSubmit{
+        width: 350px;
+        height: 30px;
+        margin: 15px 0;
+        border-radius: 2px;
+        color: white;
+        font-size: $brand-fontSize;
+        padding-left: 5px;
+        font-family: 'Exo Medium';
+    }
+    .quoteSubmit{
+        width: 550px;
+        height: 100px;
+        border-radius: 2px;
+        color: white;
+        font-size: $brand-fontSize;
+        padding-left: 5px;
+        font-family: 'Exo Medium';
+    }
+}

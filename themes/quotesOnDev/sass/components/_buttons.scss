@@ -9,7 +9,8 @@
         padding: 10px 15px;
         font-size: 16px;
         font-family: 'Exo Medium';
-        text-transform: capitalize; 
+        text-transform: capitalize;
+        border-radius: 2px;
     }
 }
 
@@ -21,6 +22,19 @@
         padding: 5px 30px 5px 10px;
         font-size: 16px;
         font-family: 'Exo Medium';
-        text-transform: capitalize; 
+        text-transform: capitalize;
+        border-radius: 2px;
     }
+}
+
+.submitQuote{
+    background-color: transparent;
+    border: 1px solid $brand-green;
+    color: $brand-green;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Exo Medium';
+    text-transform: capitalize; 
+    width: 150px;
+    border-radius: 2px;
 }
