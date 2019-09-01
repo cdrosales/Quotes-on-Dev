@@ -27,3 +27,11 @@ input, textarea{
         font-family: 'Exo Medium';
     }
 }
+
+.errorSubmit{
+    display: none;
+        a{
+            color: $brand-green;
+            text-decoration: none;
+        }
+}

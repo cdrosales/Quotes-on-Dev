@@ -25,8 +25,9 @@ get_header(); ?>
 
         <div class="title"><?php the_title();?></div>
 
+        <div class="submitForm">
         <form method="post" class="quoteForm">
-       
+
         <h1>Author of Quote</h1>
         <input type="text" name="title" class="authorSubmit">
 
@@ -37,14 +38,20 @@ get_header(); ?>
         <input type="text" name="_qod_quote_source" class="findQuoteSource">
         
         <h1>Provide the URL of the quote source, if available.</h1>
-        <input type="url" name="_qod_quote_source_url" class="quoteSourceSubmit">
+        <input type="text" name="_qod_quote_source_url" class="quoteSourceSubmit">
 
 
         <div class="submitQuoteBTN">
             <button type="submit" class="submitQuote">Submit quote</button>
         </div>
+        </div>
 
         </form>
+
+        <div class="errorSubmit"> 
+            <p> Sorry you must be logged in to submit a quote! </p>
+            <a href="<?php echo esc_url( wp_login_url() ); ?>" class="errorLogin">Click here to login.</a>
+        </div>
 
         
     </div>

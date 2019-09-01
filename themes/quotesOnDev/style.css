@@ -266,6 +266,12 @@ input, textarea {
   padding-left: 5px;
   font-family: 'Exo Medium'; }
 
+.errorSubmit {
+  display: none; }
+  .errorSubmit a {
+    color: #00cc00;
+    text-decoration: none; }
+
 .buttonHome {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,7 +309,8 @@ input, textarea {
   font-family: 'Exo Medium';
   text-transform: capitalize;
   width: 150px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  margin-top: 10px; }
 
 .nav {
   display: -webkit-box;

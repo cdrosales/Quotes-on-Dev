@@ -49,11 +49,14 @@
          alert('Success! Your post has been submitted!');
       })
       .fail(function() { 
-         alert("Error! Unable to submit post."); 
+         // alert("Error! Unable to submit post."); 
+        $('.submitForm').hide();
+         $('.errorSubmit').show();
+
      });
       
    
-        
+      
 
 
    });
