@@ -12,7 +12,7 @@ if ( ! function_exists( 'qod_setup' ) ) :
  * Sets up theme defaults and registers support for various WordPress features.
  */
 function qod_setup() {
-	// Add default posts and comments RSS feed links to head.
+	// Add default posts and postss RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
 	// Let WordPress manage the document title.
@@ -23,7 +23,7 @@ function qod_setup() {
 		'primary' => esc_html( 'Primary Menu' ),
 	) );
 
-	// Switch search form, comment form, and comments to output valid HTML5.
+	// Switch search form, posts form, and postss to output valid HTML5.
 	add_theme_support( 'html5', array( 'search-form' ) );
 
 }
@@ -93,10 +93,11 @@ require get_template_directory() . '/inc/api.php';
 function red_scripts() { //this is in our server
 	$script_url = get_template_directory_uri() . '/js/scripts.js';
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), microtime(), true );
-   wp_localize_script( 'red_comments', 'red_vars', array( //localized red_vars in our browser
+	wp_enqueue_script( 'red_posts', $script_url, array( 'jquery' ), microtime(), true );
+   	wp_localize_script( 'red_posts', 'red_vars', array( //localized red_vars in our browser
 	   'rest_url' => esc_url_raw( rest_url() ),
 	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+	   'post_id' => get_the_ID()
    ) );
  }
  add_action( 'wp_enqueue_scripts', 'red_scripts' );
@@ -113,9 +114,6 @@ function red_scripts() { //this is in our server
 } 
  
 add_action('pre_get_posts', 'posts_per_page');
-
-
-
 
 
 ?>
