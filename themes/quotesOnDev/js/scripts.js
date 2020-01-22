@@ -45,9 +45,19 @@
       .fail(function() { 
         $('.submitForm').hide();
          $('.errorSubmit').show();
-
+         
      });
    });
+   
+  
+   
+   $('.fa-search').on('click', function(event) {
+   //   let $sval = $('.search-field').val();
+   //    console.log($sval)
+      $('.searchValue').append("hello");
+      
+   });
+
 })( jQuery );
 
 

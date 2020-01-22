@@ -325,7 +325,6 @@ input, textarea {
           justify-content: flex-end;
   margin: 50px 25px 50px 0; }
   .nav .menu {
-    width: 275px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -333,6 +332,8 @@ input, textarea {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-right: 10px; }
+    .nav .menu ul {
+      width: 285px; }
   .nav a {
     color: #00cc00;
     text-decoration: none;

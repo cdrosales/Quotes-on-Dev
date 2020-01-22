@@ -6,7 +6,7 @@
 
     <div class="about">
 
-        <div class="title"> Search results for: </div>
+        <div class="title"> Search results for: <p class="searchValue"></p> </div>
 
         <div class="searchContent">
             <?php if( have_posts() ): 
